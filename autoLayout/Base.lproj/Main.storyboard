@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+    <device id="ipad12_9rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,35 +15,72 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mn-ac-Lnc" userLabel="Blue">
-                                <rect key="frame" x="0.0" y="144" width="150" height="698"/>
+                                <rect key="frame" x="0.0" y="124" width="150" height="1202"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3n-Fx-YIP" userLabel="Red">
-                                <rect key="frame" x="158" y="144" width="256" height="698"/>
+                                <rect key="frame" x="158" y="124" width="866" height="1202"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlueRed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duX-kD-UVg">
+                                <rect key="frame" x="451" y="13" width="122.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RedBlue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9I-rP-0Pp">
+                                <rect key="frame" x="480" y="62" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="k3n-Fx-YIP" firstAttribute="leading" secondItem="7mn-ac-Lnc" secondAttribute="trailing" constant="8" id="2za-5t-ON0"/>
+                            <constraint firstItem="O9I-rP-0Pp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IyP-9A-Qxc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7mn-ac-Lnc" secondAttribute="bottom" constant="20" id="L49-uD-u9K"/>
+                            <constraint firstItem="O9I-rP-0Pp" firstAttribute="top" secondItem="duX-kD-UVg" secondAttribute="bottom" constant="8" id="T1R-lY-Ax3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k3n-Fx-YIP" secondAttribute="bottom" constant="20" id="aIN-vz-Oko"/>
                             <constraint firstItem="k3n-Fx-YIP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="fjj-e0-IG1"/>
+                            <constraint firstItem="k3n-Fx-YIP" firstAttribute="top" secondItem="duX-kD-UVg" secondAttribute="bottom" constant="70" id="i89-Be-Tzh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k3n-Fx-YIP" secondAttribute="trailing" id="m87-ww-DyV"/>
                             <constraint firstItem="7mn-ac-Lnc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="q6e-ZB-Z22"/>
                             <constraint firstItem="7mn-ac-Lnc" firstAttribute="width" secondItem="k3n-Fx-YIP" secondAttribute="width" multiplier="1:100000" priority="750" constant="150" id="rSb-Kz-mx4"/>
+                            <constraint firstItem="duX-kD-UVg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tOb-Yv-gdW"/>
                             <constraint firstItem="7mn-ac-Lnc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wde-MY-Yy7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="O9I-rP-0Pp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="IyP-9A-Qxc"/>
+                                <exclude reference="T1R-lY-Ax3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="O9I-rP-0Pp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="IyP-9A-Qxc"/>
+                                <include reference="T1R-lY-Ax3"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="137.109375" y="137.92093704245971"/>
         </scene>
     </scenes>
 </document>
