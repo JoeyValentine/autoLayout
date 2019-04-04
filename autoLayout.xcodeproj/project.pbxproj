@@ -14,6 +14,7 @@
 		D45AA71622564501003F221D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45AA71422564501003F221D /* LaunchScreen.storyboard */; };
 		D45AA72122564501003F221D /* autoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45AA72022564501003F221D /* autoLayoutTests.swift */; };
 		D45AA72C22564501003F221D /* autoLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45AA72B22564501003F221D /* autoLayoutUITests.swift */; };
+		D45AA73A22564607003F221D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D45AA73922564607003F221D /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D45AA72722564501003F221D /* autoLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = autoLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45AA72B22564501003F221D /* autoLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autoLayoutUITests.swift; sourceTree = "<group>"; };
 		D45AA72D22564501003F221D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45AA73922564607003F221D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		D45AA6FF22564500003F221D = {
 			isa = PBXGroup;
 			children = (
+				D45AA73922564607003F221D /* .gitignore */,
 				D45AA70A22564500003F221D /* autoLayout */,
 				D45AA71F22564501003F221D /* autoLayoutTests */,
 				D45AA72A22564501003F221D /* autoLayoutUITests */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45AA73A22564607003F221D /* .gitignore in Resources */,
 				D45AA71622564501003F221D /* LaunchScreen.storyboard in Resources */,
 				D45AA71322564501003F221D /* Assets.xcassets in Resources */,
 				D45AA71122564500003F221D /* Main.storyboard in Resources */,
