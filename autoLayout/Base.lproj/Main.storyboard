@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9rounded" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,19 +15,19 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mn-ac-Lnc" userLabel="Blue">
-                                <rect key="frame" x="0.0" y="124" width="150" height="1202"/>
+                                <rect key="frame" x="0.0" y="144" width="150" height="698"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3n-Fx-YIP" userLabel="Red">
-                                <rect key="frame" x="158" y="124" width="866" height="1202"/>
+                                <rect key="frame" x="158" y="144" width="256" height="698"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlueRed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duX-kD-UVg">
-                                <rect key="frame" x="451" y="13" width="122.5" height="41"/>
+                                <rect key="frame" x="175.33333333333334" y="53.666666666666664" width="63.666666666666657" height="20.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,9 @@
                             <constraint firstItem="O9I-rP-0Pp" firstAttribute="top" secondItem="duX-kD-UVg" secondAttribute="bottom" constant="8" id="T1R-lY-Ax3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k3n-Fx-YIP" secondAttribute="bottom" constant="20" id="aIN-vz-Oko"/>
                             <constraint firstItem="k3n-Fx-YIP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="fjj-e0-IG1"/>
-                            <constraint firstItem="k3n-Fx-YIP" firstAttribute="top" secondItem="duX-kD-UVg" secondAttribute="bottom" constant="70" id="i89-Be-Tzh"/>
+                            <constraint firstItem="k3n-Fx-YIP" firstAttribute="top" secondItem="duX-kD-UVg" secondAttribute="bottom" constant="70" id="i89-Be-Tzh">
+                                <variation key="heightClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k3n-Fx-YIP" secondAttribute="trailing" id="m87-ww-DyV"/>
                             <constraint firstItem="7mn-ac-Lnc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="q6e-ZB-Z22"/>
                             <constraint firstItem="7mn-ac-Lnc" firstAttribute="width" secondItem="k3n-Fx-YIP" secondAttribute="width" multiplier="1:100000" priority="750" constant="150" id="rSb-Kz-mx4"/>
